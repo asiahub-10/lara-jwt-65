@@ -12,6 +12,7 @@ use Tymon\JWTAuth\Facades\JWTAuth;
 class AuthController extends Controller
 {
     public function register(Request $request){
+        return test();
         $request->validate([
             'name' => 'required|max:255',
             'email' => 'required|email|unique:users,email',
